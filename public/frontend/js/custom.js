@@ -48,11 +48,9 @@ function languageSwitcher() {
         $('#polyglotLanguageSwitcher').polyglotLanguageSwitcher({
             effect: 'slide',
             animSpeed: 500,
-            testMode: true,
+            testMode: false,
             onChange: function(evt) {
-                    alert("The selected language is: " + evt.selectedItem);
                 }
-
         });
     };
 }

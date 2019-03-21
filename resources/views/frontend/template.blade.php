@@ -22,6 +22,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/frontend/images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="/frontend/images/favicon/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="/frontend/images/favicon/favicon-16x16.png" sizes="16x16">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
 </head>
@@ -42,8 +43,8 @@
                                 <div id="polyglotLanguageSwitcher">
                                     <form action="#">
                                         <select id="polyglot-language-options">
-                                            <option id="en" value="en" {{\Illuminate\Support\Facades\Session::get('language') == 'en' ? 'selected' : ''}}>English</option>
-                                            <option id="tr" value="tr" {{\Illuminate\Support\Facades\Session::get('language') == 'tr' ? 'selected' : ''}}>Turkish</option>
+                                            <option id="en" value="en" {{\Illuminate\Support\Facades\App::getLocale() == 'en' ? 'selected' : ''}}>English</option>
+                                            <option id="tr" value="tr" {{\Illuminate\Support\Facades\App::getLocale() == 'tr' ? 'selected' : ''}}>Turkish</option>
                                          </select>
                                      </form>
                                  </div>
@@ -90,8 +91,8 @@
                             </div>
                             <div class="navbar-collapse collapse clearfix">
                                 <ul class="navigation clearfix">
-                                    <li class="dropdown current"><a href="/">Home</a></li>
-                                    <li><a href="/about">About Us</a></li>
+                                    <li class="dropdown current"><a href="/">{{ __('texts.navbar.home') }}</a></li>
+                                    <li><a href="/about">{{ __('texts.navbar.about_us') }}</a></li>
                                     <li class="dropdown"><a href="#">Solutions</a>
                                         <ul>
                                             <li><a href="/about">Solar Energy</a></li>

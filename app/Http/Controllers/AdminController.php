@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+
 class AdminController extends Controller
 {
+    use AuthenticatesUsers;
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +17,7 @@ class AdminController extends Controller
     {
         $this->middleware('auth');
     }
-    use AuthenticatesUsers;
+
     public function index()
     {
        return view('admin.index');

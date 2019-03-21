@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="cfn@localhost" uuid="d2e03955-9c28-491c-882f-1801ba863204">
+    <data-source source="LOCAL" name="cfn_dev@localhost" uuid="d2e03955-9c28-491c-882f-1801ba863204">
       <driver-ref>mysql</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/cfn</jdbc-url>
+      <jdbc-url>jdbc:mysql://localhost:3306/cfn_dev</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="convertToNull" />

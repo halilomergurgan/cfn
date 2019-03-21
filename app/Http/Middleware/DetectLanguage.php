@@ -17,11 +17,16 @@ class DetectLanguage
      */
     public function handle($request, Closure $next)
     {
-        if (Session::has('language')) {
-            $language = Session::get('language');
-        } else {
-          $language = 'en';
-          Session::put('language', $language);
+        if($request->input('lang')){
+            $language = $request->input('lang');
+            Session::put('language', $language);
+        }else{
+            if (Session::has('language')) {
+                $language = Session::get('language');
+            } else {
+                $language = 'en';
+                Session::put('language', $language);
+            }
         }
 
         App::setLocale($language);

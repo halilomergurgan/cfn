@@ -42,8 +42,8 @@
                                 <div id="polyglotLanguageSwitcher">
                                     <form action="#">
                                         <select id="polyglot-language-options">
-                                            <option id="en" value="en" selected>English</option>
-                                            <!-- <option id="tr" value="tr">Türkçe</option>-->
+                                            <option id="en" value="en" {{\Illuminate\Support\Facades\Session::get('language') == 'en' ? 'selected' : ''}}>English</option>
+                                            <option id="tr" value="tr" {{\Illuminate\Support\Facades\Session::get('language') == 'tr' ? 'selected' : ''}}>Turkish</option>
                                          </select>
                                      </form>
                                  </div>

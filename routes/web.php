@@ -48,6 +48,14 @@ Route::group(array('prefix' => 'admin'), function()
 
 });
 
+Route::group(array('prefix' => '/'),function ()
+{
+    Route::get('/', 'FrontendController@index');
+    Route::get('/news', 'FrontendController@news');
+    Route::get('/about', 'FrontendController@about');
+    Route::get('/solitions', 'FrontendController@solitions');
+
+});
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

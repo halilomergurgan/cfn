@@ -24,55 +24,35 @@
     <section id="blog-area" class="blog-default-area">
         <div class="container">
             <div class="row">
-                <!--Start single blog post-->
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                    <div class="single-blog-post">
-                        <div class="img-holder">
-                            <img src="/frontend/images/resources/0d1fd34f22c9730e91eb5170fbddc114_XL.jpg" alt="Awesome Image">
-                            <div class="overlay-style-one">
-                                <div class="box">
-                                    <div class="content">
-                                        <div class="icon">
-                                            <a class="readmore" href="/about"><span class="icon-more"></span></a>
+                @foreach($news as $new)
+                    <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
+                        <div class="single-blog-post">
+                            <div class="img-holder">
+                                <img  style="height: 270px; width: 367px;" src="{{$new->photo_path}}">
+                                <div class="overlay-style-one">
+                                    <div class="box">
+                                        <div class="content">
+                                            <div class="icon">
+                                                <a class="readmore" href="/about"><span class="icon-more"></span></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="text-holder">
-                            <div class="post-date">
-                                <p>12th March, 2019</p>
-                            </div>
-                            <h3 class="blog-title"><a href="/about">We are attending to SOLAREX 2019 exhibition</a></h3>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-                    <div class="single-blog-post">
-                        <div class="img-holder">
-                            <img src="/frontend/images/blog/v1-3.jpg" alt="Awesome Image">
-                            <div class="overlay-style-one">
-                                <div class="box">
-                                    <div class="content">
-                                        <div class="icon">
-                                            <a class="readmore" href="/about"><span class="icon-more"></span></a>
-                                        </div>
-                                    </div>
+                            <div class="text-holder">
+                                <div class="post-date">
+                                    <p>{{$new->created_at}}</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="text-holder">
-                            <div class="post-date">
-                                <p>12th March, 2019</p>
-                            </div>
-                            <h3 class="blog-title"><a href="/about">CFN Enerji is installing 10 MW Solar Power Station in Iraq</a></h3>
-                        </div>
 
+                                <h3 class="blog-title" ><a href="/about">{!! Str::limit($new->description_tr, 85) !!}</a></h3>
+
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <!--End single blog post-->
+                @endforeach
+
+
+
 
 
 

@@ -102,16 +102,7 @@ class AnnouncementController extends Controller
             $this->validate(request(), array('photo_path' => 'image|mimes:png,jpg,jpeg,gif'));
             $path = Storage::disk('local')->put('/public/uploads/dosyalar', request()->file('photo_path'));
             $announcements->photo_path = $path;
-            /*
-            if($photo->isValid()){
-                $photo_target_file = 'uploads/dosyalar';
-                $file_path = $photo_target_file.'/'.$file_name;
-                $photo->move($photo_target_file,$file_name);
-                $news->photo_path = $file_path;
-            }
-            */
         }
-
         $announcements->save();
 
         if ($announcements) {
@@ -127,7 +118,7 @@ class AnnouncementController extends Controller
             return back();
         }
     }
- 
+
     public function destroy($id)
     {
         Announcement::destroy($id);

@@ -25,4 +25,24 @@ class Solitions extends Model
     public  function getMenuName(){
         return $this->belongsTo('App\Menus','menu_id');
     }
+
+    public function getTitleLangNameAttribute(){
+
+        if(\Illuminate\Support\Facades\App::getLocale() == 'tr')
+        {
+            return $this->title_tr;
+        }else{
+            return $this->title_eng;
+        }
+    }
+
+    public function getDescriptionLangNameAttribute(){
+
+        if(\Illuminate\Support\Facades\App::getLocale() == 'tr')
+        {
+            return $this->description_tr;
+        }else{
+            return $this->description_en;
+        }
+    }
 }

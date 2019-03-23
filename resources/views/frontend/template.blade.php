@@ -93,15 +93,15 @@
                                 <ul class="navigation clearfix">
                                     <li class="dropdown current"><a href="/">{{ __('texts.navbar.home') }}</a></li>
                                     <li><a href="/about">{{ __('texts.navbar.about_us') }}</a></li>
-                                    <li class="dropdown"><a href="#">Solutions</a>
+                                    <li class="dropdown"><a href="#">{{ __('texts.navbar.solutions') }}</a>
                                         <ul>
-                                            <li><a href="/about">Solar Energy</a></li>
-                                            <li><a href="/about">Energy Commitment</a></li>
-                                            <li><a href="/about">Operation and Maintenance</a></li>
-                                            <li><a href="/about">Project Designing</a></li>
+                                            @foreach($solitions as $solition)
+                                                <li><a href="/solutions/{{$solition->id}}">{{$solition->title_eng}}</a></li>
+                                            @endforeach
+
                                         </ul>
                                     </li>
-                                    <li class="dropdown"><a href="/news">News</a></li>
+                                    <li class="dropdown"><a href="/news">{{ __('texts.navbar.news') }}</a></li>
                                     <li><a href="/contact">Contact</a></li>
                                 </ul>
                             </div>

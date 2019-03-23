@@ -65,8 +65,6 @@
             $news = new News();
             $news->title_tr = $request->input('title_tr');
             $news->title_eng = request('title_eng');
-            //$news->description_tr = strip_tags(request('description_tr'));
-            //$news->description_en = strip_tags(request('description_tr'));
             $news->description_tr = request('description_tr');
             $news->description_en = request('description_en');
 

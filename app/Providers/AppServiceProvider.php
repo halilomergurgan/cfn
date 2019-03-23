@@ -2,6 +2,11 @@
 
 namespace App\Providers;
 
+use App\Announcement;
+use App\Menus;
+use App\News;
+use App\Solitions;
+use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Facades\Schema;
 
@@ -26,6 +31,18 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Schema::defaultStringLength(191);
+        //view share
+        $solitions = Solitions::all();
+        $menus = Menus::all();
+        $news = News::all();
+        $announcement = Announcement::all();
+        View::Share([
+            'solitions'     => $solitions,
+            'menus'         => $menus,
+            'news'          => $news,
+            'announcement'  => $announcement,
+
+        ]);
 
     }
 }

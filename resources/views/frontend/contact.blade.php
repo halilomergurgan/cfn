@@ -15,10 +15,7 @@
             </div>
         </div>
     </section>
-    <!--End breadcrumb area-->
-
-    <!--Start contact form area-->
-    <section class="contact-info-area">
+     <section  class="contact-info-area">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
@@ -61,25 +58,6 @@
             </div>
         </div>
     </section>
-    <!--End contact form area-->
-
-    <!--Start Positive Career Area-->
-    <section class="positive-career-area" style="background-image: url(images/parallax-background/positive-career-bg.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                    <div class="positive-career-content">
-                        <div class="icon">
-                            <span class="flaticon-search"></span>
-                        </div>
-                        <h1>Make a<br> Positive Career Move</h1>
-                        <p>Explain to you how all this mistaken idea of denouncing pleasure & praising human happiness.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Positive Career Area-->
 
     <!--Start Branches section-->
     <section class="branches-section">

@@ -33,9 +33,22 @@ class FrontendController extends Controller
         $abouts = About::all();
         return view('frontend.about', compact('abouts'));
     }
-    public function solitions()
+
+    public function solutions($id)
     {
+
+        /*first one data row
+        $solitions = Solitions::find($id)->first();*/
+
         $solitions = Solitions::all();
-        return view('frontend.solitions',compact('solitions'));
+        return view('frontend.solutions',compact('solitions'));
     }
+
+    public function newshow($id)
+    {
+        $news = News::all();
+        return view('frontend.newshow',compact('news'));
+    }
+
+
 }

@@ -6,7 +6,7 @@
         <div class="span">
             <div class="widget-box">
                 <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-                    <h5>Solitions Create Page</h5>
+                    <h5>Solutions Create Page</h5>
                 </div>
                 <div class="widget-content nopadding">
                     {!! Form::open(['route'=>['solitions.store'],'method'=>'POST','files'=>'true','class'=>'widget-content nopadding']) !!}

@@ -16,7 +16,8 @@
             </div>
         </div>
     </section>
-    <!--End breadcrumb area-->
+
+
 
     <!--Start about content area-->
     <section class="about-content-area">
@@ -26,8 +27,8 @@
                     <!--Start single blog post-->
                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                         <div class="about-content-box">
-                            <h2>{!!$about->title_eng!!}</h2>
-                            <p> {!! $about->description_en !!}</p>
+                            <h2>{{ __('texts.content.title', ['title' => $about->title_lang_name]) }}</h2>
+                            <p>{!! __('texts.content.description', ['description' => $about->description_lang_name]) !!} </p>
 
                         </div>
                     </div>

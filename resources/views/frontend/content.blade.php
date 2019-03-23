@@ -165,7 +165,9 @@
                                     </div>
                                 </div>
                                 <div class="text-holder">
-                                    <p>CFN Energy operates in all phases of its turn-key solar energy systems, from the design of its projects to putting into practice. We focus on solar PV system and energy efficiency issues, and we provide services in consulting, planning, engineering, application, operation and maintenance areas.</p>
+                                    <p>
+                                        {{__('texts.navbar.solartext')}}
+                                    </p>
 
                                 </div>
                             </li>
@@ -179,7 +181,9 @@
                                     </div>
                                 </div>
                                 <div class="text-holder">
-                                    <p>In the final point before we meet the ultimate  consumer of electricity, we serve in a wide range of areas from simple  aerial distribution  lines to intelligent urban networks.</p>
+                                   <p>
+                                       {{__('texts.navbar.energyTransmissionText')}}
+                                   </p>
 
                                 </div>
                             </li>
@@ -193,7 +197,9 @@
                                     </div>
                                 </div>
                                 <div class="text-holder">
-                                    <p>CFN Enerji  operates and maintains  the electrical systems of many technological facilities with its competent and expert engineer and technician staff for 24/7 hours and ensures that it is in continuous and trouble free operation.</p>
+                                   <p>
+                                       {{__('texts.navbar.omText')}}
+                                   </p>
 
                                 </div>
                             </li>

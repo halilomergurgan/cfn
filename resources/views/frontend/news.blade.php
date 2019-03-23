@@ -11,7 +11,7 @@
                             <span class="icon-blog"></span>
                         </div>
                         <div class="title text-center">
-                            <h1>News & Updates</h1>
+                            <h1>{{ __('texts.navbar.newsAndUpdate') }}</h1>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@
                                     <div class="box">
                                         <div class="content">
                                             <div class="icon">
-                                                <a class="readmore" href="/about"><span class="icon-more"></span></a>
+                                                <a class="readmore" href="/newshow/{{$new->id}}"><span class="icon-more"></span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -44,7 +44,7 @@
                                     <p>{{$new->created_at}}</p>
                                 </div>
 
-                                <h3 class="blog-title" ><a href="/about">{!! Str::limit($new->description_tr, 85) !!}</a></h3>
+                                <h3 class="blog-title" ><a href="/about">{!!__('texts.content.description', ['description' => $new->description_lang_name]) !!}</a></h3>
 
                             </div>
                         </div>
@@ -57,15 +57,7 @@
 
 
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <ul class="post-pagination text-center">
-                        <li><a class="left" href="#"><i class="fa fa-angle-double-left" aria-hidden="true"></i><span>Prev</span></a></li>
-                        <li class="active"><a href="#">1</a></li>
-                        <li><a class="right" href="#"><span>Next</span><i class="fa fa-angle-double-right" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
+
 
         </div>
     </section>

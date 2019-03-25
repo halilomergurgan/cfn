@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\About;
 use App\News;
+use App\References;
 use App\Solitions;
 use stdClass;
 use Illuminate\Http\Request;
@@ -44,11 +45,8 @@ class FrontendController extends Controller
         return view('frontend.solutions',compact('solitions'));
     }
 
-    public function newshow($id)
-    {
-        $news = News::all();
-        return view('frontend.newshow',compact('news'));
-    }
+
+
 
 
 }

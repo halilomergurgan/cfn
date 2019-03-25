@@ -15,6 +15,7 @@ return [
             24/7 hours and ensures that it is in continuous and trouble free operation.',
         'energyTransmissionText' => 'In the final point before we meet the ultimate consumer of electricity, we serve in a wide range of areas from simple aerial distribution 
             lines to intelligent urban networks.',
+        'references' => 'References'
     ],
     'content' =>[
         'description' => ':description',

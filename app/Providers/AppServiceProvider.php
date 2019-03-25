@@ -5,6 +5,7 @@ namespace App\Providers;
 use App\Announcement;
 use App\Menus;
 use App\News;
+use App\References;
 use App\Solitions;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -36,12 +37,13 @@ class AppServiceProvider extends ServiceProvider
         $menus = Menus::all();
         $news = News::all();
         $announcement = Announcement::all();
+        $references = References::all();
         View::Share([
             'solitions'     => $solitions,
             'menus'         => $menus,
             'news'          => $news,
             'announcement'  => $announcement,
-
+            'references'    => $references,
         ]);
 
     }

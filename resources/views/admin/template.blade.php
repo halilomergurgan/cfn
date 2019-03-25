@@ -57,6 +57,7 @@
         <li> <a href="{{url('/admin/announcement')}}"><span>Announcement</span></a> </li>
         <li><a href="{{url('/admin/about')}}"><span>About</span></a></li>
         <li><a href="{{url('/admin/solitions')}}"><span>Solutions</span></a></li>
+        <li><a href="{{url('/admin/references')}}"><span>References</span></a></li>
         <li><a href="{{url('/admin/menu')}}"><span>Menus</span></a></li>
         <!--<li><a href="tables.html"><span>Partners</span></a></li>-->
 

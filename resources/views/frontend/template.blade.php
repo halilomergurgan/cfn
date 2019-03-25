@@ -101,8 +101,9 @@
 
                                         </ul>
                                     </li>
+                                    <li class="dropdown"><a href="/references">{{ __('texts.navbar.references') }}</a></li>
                                     <li class="dropdown"><a href="/news">{{ __('texts.navbar.news') }}</a></li>
-                                    <li><a href="/contact">Contact</a></li>
+                                    <li><a href="/contact">{{ __('texts.navbar.contact') }}</a></li>
                                 </ul>
                             </div>
                         </nav>

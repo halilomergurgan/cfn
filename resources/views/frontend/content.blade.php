@@ -2,9 +2,6 @@
 
 @section('content')
 
-
-
-    <!--Main Slider-->
     <section class="main-slider">
         <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
             <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
@@ -146,9 +143,7 @@
             </div>
         </div>
     </section>
-    <!--End Main Slider-->
 
-    <!--Start Call To Action area-->
     <section class="call-to-action-area">
         <div class="container">
             <div class="row">
@@ -209,9 +204,7 @@
             </div>
         </div>
     </section>
-    <!--End Call To Action Area-->
 
-    <!--Start services style1 area-->
     <section class="services-style1-area">
         <div class="container">
             <div class="sec-title text-center">
@@ -334,9 +327,7 @@
 
         </div>
     </section>
-    <!--End services style1 area-->
 
-    <!--Start working process area-->
     <section class="working-process-area">
         <div class="container">
             <div class="sec-title text-center">

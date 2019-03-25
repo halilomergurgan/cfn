@@ -45,6 +45,8 @@ Route::group(array('prefix' => 'admin'), function()
     Route::resource('menu','MenuController');
     /*Solitions*/
     Route::resource('solitions','SolitionsController');
+    /*References*/
+    Route::resource('references','ReferencesController');
 
 });
 
@@ -55,6 +57,10 @@ Route::group(array('prefix' => '/'),function ()
     Route::get('/about', 'FrontendController@about');
     Route::get('/solutions/{id}', 'FrontendController@solutions');
     Route::get('/newshow/{id}', 'FrontendController@newshow');
+    Route::get('/references', function () {
+        return view('frontend.references');
+    });
+
 
 
 });

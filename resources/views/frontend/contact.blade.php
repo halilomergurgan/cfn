@@ -8,22 +8,9 @@
     <section class="breadcrumb-area style2" style="background-image: url(images/resources/breadcrumb-bg-2.jpg);">
         <div class="container">
             <div class="row">
-                <div class="col-xl-12">
-                    <div class="inner-content clearfix">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-     <section  class="contact-info-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12">
-
-                </div>
-                <div class="col-xl-4 col-lg-8 col-md-12 col-sm-12">
+                <div class="col-xl-6 col-lg-8 col-md-12 col-sm-12">
                     <div class="quick-contact-box">
-                        <h3>Head Office</h3>
+                        <h3>{{ __('texts.navbar.headOffice') }}</h3>
                         <ul class="top">
                             <li>
                                 <div class="title">
@@ -37,7 +24,7 @@
                         <ul class="bottom">
                             <li>
                                 <div class="title">
-                                    <h5>Phone</h5>
+                                    <h5>{{ __('texts.navbar.phone') }}</h5>
                                 </div>
                                 <div class="text">
                                     <p>+90 382 202 00 72</p>
@@ -54,13 +41,51 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-xl-3 col-lg-8 col-md-12 col-sm-12">
+                    <div class="quick-contact-box">
+                        <h3>{{ __('texts.navbar.branch') }}</h3>
+                        <ul class="top">
+                            <li>
+                                <div class="title">
+                                    <h3>IRAQ</h3>
+                                </div>
+                                <div class="text">
 
+                                    <p><br> Mecmu-El Ticari<br> No:26 <br>Zakho-Dohuk / Iraq</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="bottom">
+                            <li>
+                                <div class="title">
+                                    <h5>{{ __('texts.navbar.phone') }}</h5>
+                                </div>
+                                <div class="text">
+                                    <p>+90 542 545 87 44</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="title">
+                                    <h5>Email</h5>
+                                </div>
+                                <div class="text">
+                                    <p>info@cfnenerji.com</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="inner-content clearfix">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+
     <!--Start Branches section-->
-    <section class="branches-section">
+    {{--<section class="branches-section">
         <div class="container">
             <div class="sec-title text-center">
                 <div class="title">Other Branch</div>
@@ -105,7 +130,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>--}}
 
 
 @endsection

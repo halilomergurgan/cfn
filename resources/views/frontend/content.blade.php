@@ -30,7 +30,7 @@
                              style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
                                 <div class="big-title">
-                                    <b>CFN,</b>We build energy <br> transmission lines<br>and city electric networks
+                                    {{ __('texts.navbar.weBuild') }} <br>{{ __('texts.navbar.transmissionLines') }}<br>{{ __('texts.navbar.electricNetwork') }}
                                 </div>
                             </div>
                         </div>
@@ -51,9 +51,7 @@
                              data-textalign="['top','top','top','top']"
                              data-frames='[{"from":"x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'
                              style="z-index: 7; white-space: nowrap;">
-                            <div class="slide-content left-slide">
-                                <div class="text">Maintains a highly trained, qualified and experienced workforce.</div>
-                            </div>
+
                         </div>
                         <div class="tp-caption"
                              data-paddingbottom="[0,0,0,0]"
@@ -97,7 +95,7 @@
                              style="z-index: 7; white-space: nowrap;">
                             <div class="slide-content left-slide">
                                 <div class="big-title">
-                                    <b>CFN,</b>CFN Energy operates in<br>all phases of its turn-key<br>solar energy systems
+                                    {{ __('texts.navbar.EnergyOperates') }} <br>{{ __('texts.navbar.allPhases') }}<br>{{ __('texts.navbar.energySystems') }}
                                 </div>
                             </div>
                         </div>
@@ -156,7 +154,7 @@
                                         <span class="icon-work"></span>
                                     </div>
                                     <div class="title-holder">
-                                        <h3>Installation Solar<br>Power Plant</h3>
+                                        <h3>{{__('texts.navbar.InstallationSolarPowerPlant')}}</h3>
                                     </div>
                                 </div>
                                 <div class="text-holder">
@@ -172,7 +170,7 @@
                                         <span class="icon-london"></span>
                                     </div>
                                     <div class="title-holder">
-                                        <h3>Installation<br>Energy Tranmission<br> Lines</h3>
+                                        <h3>{{__('texts.navbar.InstallationEnergyTranmissionLines')}}</h3>
                                     </div>
                                 </div>
                                 <div class="text-holder">
@@ -188,7 +186,7 @@
                                         <span class="icon-work"></span>
                                     </div>
                                     <div class="title-holder">
-                                        <h3>Installation Operations and Maintenance<br>(O&M)</h3>
+                                        <h3>{{__('texts.navbar.OperationsandMaintenance(O&M)')}}</h3>
                                     </div>
                                 </div>
                                 <div class="text-holder">
@@ -208,10 +206,10 @@
     <section class="services-style1-area">
         <div class="container">
             <div class="sec-title text-center">
-                <div class="title">Markert We Serve</div>
+
                 <div class="inner">
                     <div class="border1"></div>
-                    <span>Solutions</span>
+                    <span>{{ __('texts.navbar.Solutions') }}</span>
                     <div class="border2"></div>
                 </div>
             </div>
@@ -229,31 +227,13 @@
                                         <span class="icon-power"></span>
                                     </div>
                                     <div class="text">
-                                        <h3>Solar Power Plant</h3>
+                                        <h3>{{ __('texts.navbar.SolarPowerPlant') }}</h3>
 
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--End single solution style1-->
-                        <!--Start single solution style1-->
-                        <div class="single-solution-style1">
-                            <div class="img-holder">
-                                <img src="/frontend/images/resources/wind_power.jpg" alt="Awesome Image">
-                            </div>
-                            <div class="statics-content">
-                                <div class="text-holder">
-                                    <div class="icon">
-                                        <span class="icon-power"></span>
-                                    </div>
-                                    <div class="text">
-                                        <h3>Wind Power Plant</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End single solution style1-->
-                        <!--Start single solution style1-->
+
                         <div class="single-solution-style1">
                             <div class="img-holder">
                                 <img src="/frontend/images/resources/Power-transmission-line-1.jpg" alt="Awesome Image">
@@ -264,7 +244,7 @@
                                         <span class="icon-power"></span>
                                     </div>
                                     <div class="text">
-                                        <h3>Energy Transmission Lines</h3>
+                                        <h3>{{ __('texts.navbar.EnergyTransmissionLines') }}</h3>
                                     </div>
                                 </div>
                             </div>
@@ -282,7 +262,7 @@
                                         <span class="icon-power"></span>
                                     </div>
                                     <div class="text">
-                                        <h3>Engineering</h3>
+                                        <h3>{{ __('texts.navbar.Engineering') }}</h3>
                                     </div>
                                 </div>
                             </div>
@@ -299,7 +279,7 @@
                                         <span class="icon-power"></span>
                                     </div>
                                     <div class="text">
-                                        <h3>Operations and Maintenance (O&M)</h3>
+                                        <h3>{{ __('texts.navbar.OperationsandMaintenance(O&M)') }}</h3>
                                     </div>
                                 </div>
                             </div>
@@ -316,7 +296,7 @@
                                         <span class="icon-power"></span>
                                     </div>
                                     <div class="text">
-                                        <h3>Project Dizayn</h3>
+                                        <h3>{{ __('texts.navbar.ProjectDesign') }}</h3>
                                     </div>
                                 </div>
                             </div>
@@ -331,13 +311,12 @@
     <section class="working-process-area">
         <div class="container">
             <div class="sec-title text-center">
-                <div class="title">Working Process</div>
+                <div class="title">{{ __('texts.navbar.workingProcess') }}</div>
                 <div class="inner">
                     <div class="border1"></div>
-                    <span>Way for Solution</span>
+                    <span></span>
                     <div class="border2"></div>
                 </div>
-                <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to enjoy a pleasure that has no annoying consequences.</p>
             </div>
             <div class="row">
                 <div class="col-xl-12">
@@ -352,7 +331,7 @@
                                         </div>
                                     </div>
                                     <div class="text-holder">
-                                        <h3>Project Dizayn</h3>
+                                        <h3>{{ __('texts.navbar.ProjectDesign') }}</h3>
                                     </div>
                                 </div>
                             </li>
@@ -365,7 +344,7 @@
                                         </div>
                                     </div>
                                     <div class="text-holder">
-                                        <h3>Procurement</h3>
+                                        <h3>{{ __('texts.navbar.Procurement') }}</h3>
                                     </div>
                                 </div>
                             </li>
@@ -378,7 +357,7 @@
                                         </div>
                                     </div>
                                     <div class="text-holder">
-                                        <h3>Installation</h3>
+                                        <h3>{{ __('texts.navbar.Installation') }}</h3>
                                     </div>
                                 </div>
                             </li>
@@ -391,7 +370,7 @@
                                         </div>
                                     </div>
                                     <div class="text-holder">
-                                        <h3>Commissioning</h3>
+                                        <h3>{{ __('texts.navbar.Commissioning') }}</h3>
                                     </div>
                                 </div>
                             </li>

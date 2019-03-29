@@ -33,13 +33,13 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
         //view share
-        $solitions = Solitions::all();
+        $solutions = Solitions::all();
         $menus = Menus::all();
         $news = News::all();
         $announcement = Announcement::all();
         $references = References::all();
         View::Share([
-            'solitions'     => $solitions,
+            'solutions'     => $solutions,
             'menus'         => $menus,
             'news'          => $news,
             'announcement'  => $announcement,

@@ -15,7 +15,7 @@
                         <div class="controls">
                             <select name="menu_id">
                                 @foreach($menus as $menu)
-                                    <option value="{{$menu->id}}">{{$menu->title_eng}}</option>
+                                    <option value="5">{{$menu->title_eng}}</option>
                                 @endforeach
                             </select>
                         </div>

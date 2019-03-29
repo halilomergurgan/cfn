@@ -41,8 +41,25 @@ class FrontendController extends Controller
         /*first one data row
         $solitions = Solitions::find($id)->first();*/
 
-        $solitions = Solitions::all();
+        $solitions = Solitions::find($id);
+
         return view('frontend.solutions',compact('solitions'));
+    }
+
+    public function newshow($id)
+    {
+
+        /*first one data row
+        $solitions = Solitions::find($id)->first();*/
+
+        /*$solitions = Solitions::all();
+        return view('frontend.newshow',compact('solitions'));*/
+
+
+            $news_update = News::find($id);
+
+            return view('frontend.newshow', compact('news_update'));
+
     }
 
 

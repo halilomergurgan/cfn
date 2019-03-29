@@ -95,10 +95,9 @@
                                     <li><a href="/about">{{ __('texts.navbar.about_us') }}</a></li>
                                     <li class="dropdown"><a href="#">{{ __('texts.navbar.solutions') }}</a>
                                         <ul>
-                                            @foreach($solitions as $solition)
-                                                <li><a href="/solutions/{{$solition->id}}">{{$solition->title_eng}}</a></li>
+                                            @foreach($solutions as $solution)
+                                                <li><a href="/solutions/{{$solution->id}}">{{$solution->title_lang_name}}</a></li>
                                             @endforeach
-
                                         </ul>
                                     </li>
                                     <li class="dropdown"><a href="/references">{{ __('texts.navbar.references') }}</a></li>
@@ -145,7 +144,7 @@
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
                     <div class="inner clearfix">
                         <div class="copyright-text float-left">
-                            <p>© <a href="/">CFN</a> 2018</p>
+                            <p>© <a href="/">CFN</a> 2019</p>
                         </div>
                         <div class="footer-logo">
                             <a href="/">
